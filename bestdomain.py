@@ -141,7 +141,7 @@ def main():
 
     subdomain_ip_mapping = {
         'bestcf': 'https://raw.githubusercontent.com/ymyuuu/IPDB/refs/heads/main/BestCF/bestcfv4.txt',
-        'yangsong.de5.net': 'https://raw.githubusercontent.com/1754247526-commits/yxzhidong/refs/heads/main/ip.txt',
+        'api': 'https://raw.githubusercontent.com/1754247526-commits/yxzhidong/refs/heads/main/ip.txt',
         'proxyip': 'https://raw.githubusercontent.com/chris202010/yxym/refs/heads/main/proxyip.txt',
     }
 
