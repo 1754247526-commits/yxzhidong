@@ -12,14 +12,14 @@ NO_PROXIES = {'http': None, 'https': None}
 
 
 def get_ip_list(url):
-    """获取 IP 列表（限制 20 条）"""
+    """获取 IP 列表（限制 15 条）"""
     # 添加 proxies=NO_PROXIES 忽略系统代理
     response = requests.get(url, proxies=NO_PROXIES) 
     response.raise_for_status()
     ip_list = response.text.strip().split('\n')
-    limited_list = ip_list[:20]
+    limited_list = ip_list[:15]
     if len(ip_list) > 20:
-        print(f"⚠️ 警告: {url} 返回了 {len(ip_list)} 个IP，只取前20个。")
+        print(f"⚠️ 警告: {url} 返回了 {len(ip_list)} 个IP，只取前15个。")
     return limited_list
 
 
