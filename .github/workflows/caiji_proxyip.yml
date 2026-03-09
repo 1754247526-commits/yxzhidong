@@ -2,7 +2,7 @@ name: Update PROXYIP List
 
 on:
   schedule:
-    - cron: '0 */4 * * *' # 每4小时
+    - cron: '*/30 * * * *' # 每30分钟
   workflow_dispatch:  # 也支持手动触发
 
 jobs:
